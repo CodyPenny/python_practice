@@ -67,3 +67,28 @@ print('fruit', fruit)
 print(fruit.pop())
 
 # sets can performm mathematical sets, union, intersection, difference and are faster than other containers
+
+# DICTIONARY
+# mutable, stores mappings of unique keys to values
+# keys of any immutable type, can be int, tuples, strings, are unique
+# indexed using keys
+# unordered, cannot be sorted
+# can use in operator to see if a value is in the dictionary
+# has is or is not operator that evaluates both sides if same identity or different
+# has method get
+# has method keys
+# has method values which grabs the value
+# has method items which gets the pairings
+
+chem_elements = {'hydrogen': 1, "helium": 2, "carbon": 6}
+print("carbon" in chem_elements) # True
+print(chem_elements.get('dilithium')) # None
+
+# can check if key returned is none
+n = chem_elements.get('dilithium')
+print(n is None) # True
+print(n is not None) # False
+print(chem_elements.keys()) # dict_keys(['hydrogen', 'helium', 'carbon'])
+print(chem_elements.values()) # dict_values([1, 2, 6])
+print(chem_elements.items()) # dict_items([('hydrogen', 1), ('helium', 2), ('carbon', 6)])
+
