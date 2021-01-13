@@ -1,6 +1,7 @@
 # data structures are containers that organize and group data types together
 
 # LIST
+# constructed with [ ] or list()
 months = [ 'jan', 'feb', 'mar', 'apr', 'may']
 
 # can contain a mix of data types
@@ -33,6 +34,7 @@ print(new_str)
 # for immutable ordered sequence - can't add, remove or sort them in place
 # often to store related pieces of info
 # use parenthesis but also can be omitted if it doesn't clarify the code
+# constructed with ( ) or tuple()
 # can use index to access and it can hold different types
 # can assign multiple variables in a compact way
 # useful for data integrity
@@ -54,7 +56,7 @@ unique_nums = set(nums)
 print(unique_nums) # {1, 2, 3, 4, 5, 6, 7, 8, 12, 16}
 
 # sets support the in operator as lists do
-# use curly braces to define or set()
+# constructed with { } or set(), empty { } will default to dictionary
 # can use add method, pop method removes a random element
 # it's unordered so there is no 'last' element
 
@@ -70,7 +72,8 @@ print(fruit.pop())
 
 # DICTIONARY
 # mutable, stores mappings of unique keys to values
-# keys of any immutable type, can be int, tuples, strings, are unique
+# construct using { } or dict()
+# keys are immutable, but itself is mutable can be int, tuples, strings, are unique
 # indexed using keys
 # unordered, cannot be sorted
 # can use in operator to see if a value is in the dictionary
@@ -92,3 +95,5 @@ print(chem_elements.keys()) # dict_keys(['hydrogen', 'helium', 'carbon'])
 print(chem_elements.values()) # dict_values([1, 2, 6])
 print(chem_elements.items()) # dict_items([('hydrogen', 1), ('helium', 2), ('carbon', 6)])
 
+# COMPOUND DATA STRUCTURES
+# including containers in other containers
